@@ -1,0 +1,12 @@
+<app-nav userType="user"></app-nav>
+<div class="container">
+  <div class="message {{message.type}}" *ngFor="let message of messages">{{message.message}}</div>
+  <div class="card job" *ngFor="let job of jobs">
+    <div class="job-name">{{job.name}}</div>
+    <div class="company-name">{{job.company}}</div>
+    <div class="description">{{job.description}}</div>
+    <div class="right" *ngIf="!job?.applied">
+      <button type="button" (click)="apply(job._id)">Apply</button>
+    </div>
+  </div>
+</div>

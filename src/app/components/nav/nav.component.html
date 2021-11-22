@@ -1,0 +1,22 @@
+<div class="nav">
+  <div class="nav-container left">
+    <div class="website_name">Clever<span class="highlight">Move</span></div>
+  </div>
+  <div class="nav-container right">
+    <ng-container *ngIf="userType==null">
+      <a class="link" routerLink="/home">Home</a>
+      <a class="link" routerLink="/login">Login</a>
+      <a class="link" routerLink="/signup">Sign Up</a>
+      <a class="link" routerLink="/new-company">Create Company</a>
+    </ng-container>
+    <ng-container *ngIf="userType=='user'">
+      <a class="link" routerLink="/jobs">Jobs</a>
+      <a class="link" routerLink="/logout">Logout</a>
+    </ng-container>
+    <ng-container *ngIf="userType=='company'">
+      <a class="link" routerLink="/employer">Post Job</a>
+      <a class="link" routerLink="/view-applied">View Applied</a>
+      <a class="link" routerLink="/logout">Logout</a>
+    </ng-container>
+  </div>
+</div>

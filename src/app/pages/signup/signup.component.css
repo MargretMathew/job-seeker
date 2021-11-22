@@ -1,0 +1,10 @@
+button{
+  transition: width 2s;
+  width:150px;
+}
+button:hover{
+  width:250px;
+}
+.error {
+  color: red;
+}

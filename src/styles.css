@@ -1,0 +1,69 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body,textarea {
+  font-family: sans-serif;
+}
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #e1f5fe;
+  padding: 10px 35px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px hsla(206.57, 89.74%, 35%, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  min-height: 400px;
+  justify-content: center;
+}
+input,textarea{
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  width: 100%;
+  border-bottom: 3px solid #808080;
+  background-color: transparent;
+  font-size: 17px;
+}
+input:focus,textarea:focus {
+  outline: none;
+  border-color: black;
+}
+textarea{
+  background-color: rgba(255,255,255,0.4);
+  resize: vertical;
+  max-height: 230px;
+  min-height: 42px;
+}
+button {
+  padding: 10px 20px;
+  margin: 20px 0px 10px 0px;
+  border-radius: 50px;
+  border: none;
+  background-color: #42a5f5;
+  box-shadow: 0 5px 20px hsla(206.57, 89.74%, 55%, 0.6);
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0 5px 20px hsla(206.57, 89.74%, 55%, 0.9);
+}
+button.button-red{
+  background-color: #EF5350;
+  box-shadow: 0 5px 20px hsla(1.36,77.19%,55.29%,0.6);
+}
+button.button-red:hover {
+  box-shadow: 0 5px 20px hsla(1.36,77.19%,55.29%,0.9);
+}
+h1 {
+  padding: 10px 0px;
+}
+.right{
+  text-align: right;
+}

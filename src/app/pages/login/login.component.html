@@ -1,0 +1,8 @@
+<app-nav></app-nav>
+<form class="form-login-signup" method="post">
+  <h1 class="LOGIN">Login</h1>
+  <input type="email" [(ngModel)]="email" name="email" placeholder="Email" />
+  <input type="password" [(ngModel)]="password" name="password" placeholder="Password" />
+  <div class="message error">{{error}}</div>
+  <button type="button" (click)="getValue()">Login</button>
+</form>

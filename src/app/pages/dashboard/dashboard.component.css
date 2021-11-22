@@ -1,0 +1,45 @@
+.container{
+  padding:20px;
+  box-sizing:border-box;
+}
+.card{
+  padding:20px;
+  box-sizing:border-box;
+  background-color: #81D4FA;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.job-name{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.company-name{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.description{
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+  color:rgba(0,0,0,0.7);
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 22px;
+}
+.right{
+  text-align: right;
+}
+.message{
+  padding:5px;
+  margin-bottom: 10px;
+}
+.message.success{
+  background-color: #AED581;
+  border-left: 5px solid #388E3C;
+}
+.message.error{
+  background-color: #E57373;
+  border-left: 5px solid #D32F2F;
+}

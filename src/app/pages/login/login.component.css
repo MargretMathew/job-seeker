@@ -1,0 +1,13 @@
+button{
+  transition: width 2s;
+  width:100px;
+}
+button:hover{
+  width:250px;
+}
+.message {
+  padding-top:10px;
+}
+.error {
+  color: red;
+}

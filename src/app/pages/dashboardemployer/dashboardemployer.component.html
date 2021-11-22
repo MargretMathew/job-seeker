@@ -1,0 +1,9 @@
+<app-nav userType="company"></app-nav>
+<form class="posting-job" method="post">
+  <h1 class="LOGIN">Post Job</h1>
+  <input type="text" name="job-name" [(ngModel)]="jobName" placeholder="Job Name" />
+  <textarea type="text" name="description" [(ngModel)]="description" placeholder="Enter Job Description" rows="8" cols="40"></textarea>
+  <div class="message">{{message}}</div>
+  <div class="message error">{{error}}</div>
+  <button type="button" (click)="postValue()">Save</button>
+</form>
